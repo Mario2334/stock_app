@@ -1,0 +1,8 @@
+.update-row {
+    -moz-transition: all 1s ease-in;
+    -webkit-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+    background-color:  lightblue;
+}
+
