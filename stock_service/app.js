@@ -1,8 +1,7 @@
 require('dotenv').config()
 const { MongoClient } = require("mongodb");
 let axios = require("axios");
-
-let db_client = MongoClient(process.env.MONGO_URL,{ useUnifiedTopology: true })
+var schedule = require("node-schedule")
 
 function getRandomArbitrary(min, max) {
     let random = Math.random() * (max - min) + min
@@ -21,6 +20,7 @@ function get_update_query(row){
     let ytd = parseFloat(row["YTD Change"].trim("%"))
     let soy_price = (100*curr_price)/(100-ytd)
     let new_ytd = (soy_price-changedValue)*100/soy_price
+
     // Update Query
     let update_query = {
         Price:changedValue,
@@ -31,6 +31,7 @@ function get_update_query(row){
 }
 
 async function service() {
+    let db_client = MongoClient(process.env.MONGO_URL,{ useUnifiedTopology: true })
     await db_client.connect();
     let collection = db_client.db("stock").collection("dow_jones");
     let row = await collection.aggregate([{ $sample: { size: 1 } }]).toArray();
@@ -45,4 +46,6 @@ async function service() {
     db_client.close()
 }
 
-service().then()
+const interval = setInterval(function () {
+ service().then(()=>null)
+},5000)

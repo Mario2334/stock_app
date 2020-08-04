@@ -1,5 +1,19 @@
-const socket = io.connect('http://localhost:3000/');
+function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+}
 
+const socket = io();
+socket.on("connect",function () {
+addUser();
+})
+socket.connect('http://localhost:3000/')
+
+function addUser(){
+    let num = getRandomInt(100)
+    let res = socket.emit("add user",num)
+    console.log(num)
+
+}
 socket.on("fresh data",function (data) {
     console.log(data)
     let row_el = document.getElementById(data._id)
