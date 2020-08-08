@@ -1,5 +1,4 @@
 require('dotenv').config()
-
 require('./mongo_client')
 var express = require('express');
 var path = require('path');
@@ -11,6 +10,7 @@ var http = require('http');
 var debug = require('debug')('api:server');
 var socket_setting =  require("./routes/socket")
 var exphbs  = require('express-handlebars');
+
 
 function onListening() {
     console.log("Application Running");

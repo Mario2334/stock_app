@@ -23,7 +23,7 @@ function get_update_query(row){
     // Update Query
     let update_query = {
         Price:changedValue,
-        "Volume * Price": new_vol_price,
+        "Volume * Price": new_vol_price.toFixed(2),
         "YTD Change":new_ytd.toFixed(2)+"%"
     }
     return update_query

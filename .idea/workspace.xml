@@ -19,9 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0eeb6ddd-f7d7-485d-8f9e-0819a97b46f1" name="Default Changelist" comment="Added Docker Support">
+    <list default="true" id="0eeb6ddd-f7d7-485d-8f9e-0819a97b46f1" name="Default Changelist" comment="Update &quot;/index&quot; endpoint to &quot;/&quot;">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/views/partials/live_stock.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/public/javascripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/public/javascripts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/public/stylesheets/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/api/public/stylesheets/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/views/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/api/views/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_service/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/stock_service/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +47,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.18.1" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/api" />
@@ -47,13 +56,14 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/api" />
-      <recent name="$PROJECT_DIR$/stock_service" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/api" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api/views/partials" />
+      <recent name="$PROJECT_DIR$/api" />
+      <recent name="$PROJECT_DIR$/stock_service" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -71,7 +81,7 @@
       <workItem from="1596547095761" duration="192000" />
       <workItem from="1596561547235" duration="4528000" />
       <workItem from="1596607394702" duration="3441000" />
-      <workItem from="1596870015744" duration="5210000" />
+      <workItem from="1596870015744" duration="15703000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1596547272982</created>
@@ -101,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596874599083</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Update &quot;/index&quot; endpoint to &quot;/&quot;">
+      <created>1596876997864</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1596876997864</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,9 +139,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit" />
     <MESSAGE value="Added Docker Support" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Docker Support" />
+    <MESSAGE value="Update &quot;/index&quot; endpoint to &quot;/&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update &quot;/index&quot; endpoint to &quot;/&quot;" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="141" y="55" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596877239138">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="141" y="55" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.741@0.27.1366.741" timestamp="1596877239138" />
     <state x="408" y="193" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1596433831051">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -137,11 +159,15 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="477" y="162" key="Github.UntrackedFilesDialog/0.0.1440.900@0.0.1440.900" timestamp="1596547195002" />
-    <state x="304" y="183" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1596874602496">
+    <state x="438" y="37" width="480" height="727" key="RollbackChangesDialog" timestamp="1596879961463">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="438" y="37" width="480" height="727" key="RollbackChangesDialog/0.27.1366.741@0.27.1366.741" timestamp="1596879961463" />
+    <state x="304" y="183" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1596877005568">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1596547274953" />
-    <state x="304" y="183" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1596874602496" />
+    <state x="304" y="183" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1596877005568" />
     <state x="452" y="310" width="461" height="181" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596561937862">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
@@ -150,6 +176,10 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="374" y="120" width="618" height="554" key="find.popup/0.27.1366.741@0.27.1366.741" timestamp="1596873787424" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1596888300207">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1596888300207" />
     <state x="408" y="293" width="540" height="215" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1596565572887">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
