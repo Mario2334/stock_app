@@ -1,0 +1,16 @@
+FROM keymetrics/pm2:12-alpine
+# FROM nginx:latest
+
+RUN apk update
+RUN apk add nodejs
+RUN apk add npm
+RUN apk add git
+
+ADD . /home/backend/
+WORKDIR /home/backend/
+COPY .env.prod .env
+#RUN git clone https://github.com/Mario2334/stock_app.git /home/backend/
+
+RUN npm install
+RUN ls
+CMD [ "pm2-runtime", "start", "app.js" ]

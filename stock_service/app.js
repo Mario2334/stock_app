@@ -1,7 +1,6 @@
 require('dotenv').config()
 const { MongoClient } = require("mongodb");
 let axios = require("axios");
-var schedule = require("node-schedule")
 
 function getRandomArbitrary(min, max) {
     let random = Math.random() * (max - min) + min

@@ -19,11 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0eeb6ddd-f7d7-485d-8f9e-0819a97b46f1" name="Default Changelist" comment="First Commit">
-      <change afterPath="$PROJECT_DIR$/api/.env.prod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/nginx_conf/nginx.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="0eeb6ddd-f7d7-485d-8f9e-0819a97b46f1" name="Default Changelist" comment="Added Docker Support">
+      <change afterPath="$PROJECT_DIR$/api/dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/ecosystem.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stock_service/.env.prod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stock_service/dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/nginx_conf/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/api/nginx_conf/default.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_service/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/stock_service/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +76,9 @@
       <workItem from="1596433145092" duration="118000" />
       <workItem from="1596433872684" duration="59000" />
       <workItem from="1596547095761" duration="192000" />
-      <workItem from="1596561547235" duration="374000" />
+      <workItem from="1596561547235" duration="4528000" />
+      <workItem from="1596607394702" duration="3441000" />
+      <workItem from="1596870015744" duration="3447000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1596547272982</created>
@@ -80,7 +87,21 @@
       <option name="project" value="LOCAL" />
       <updated>1596547272982</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added Docker Support">
+      <created>1596561994747</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596561994747</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added Docker Support">
+      <created>1596562194870</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1596562194870</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,10 +117,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
+    <MESSAGE value="Added Docker Support" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Docker Support" />
   </component>
   <component name="WindowStateProjectService">
     <state x="408" y="193" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1596433831051">
@@ -118,5 +141,17 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1596547274953" />
+    <state x="452" y="310" width="461" height="181" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596561937862">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="452" y="310" width="461" height="181" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1366.741@0.27.1366.741" timestamp="1596561937862" />
+    <state x="374" y="120" width="618" height="554" key="find.popup" timestamp="1596873787424">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="374" y="120" width="618" height="554" key="find.popup/0.27.1366.741@0.27.1366.741" timestamp="1596873787424" />
+    <state x="408" y="293" width="540" height="215" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1596565572887">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="408" y="293" width="540" height="215" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.27.1366.741@0.27.1366.741" timestamp="1596565572887" />
   </component>
 </project>

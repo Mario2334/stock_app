@@ -1,0 +1,21 @@
+version: "3"
+services:
+  web:
+    build: ./api/
+    ports:
+    - "3000:3000"
+    network_mode: host
+
+  stock_service:
+    build: ./stock_service/
+    network_mode: host
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./api/nginx_conf:/etc/nginx/conf.d
+    depends_on:  # <-- wait for djangoapp to be "ready" before starting this service
+      - web
+    network_mode: host
